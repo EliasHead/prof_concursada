@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="fixed left-0 top-0 z-10 w-full bg-teal-500 duration-300 ease-in>navbar">
+    <div className="ease-in>navbar fixed left-0 top-0 z-10 w-full bg-zinc-600 duration-300">
       <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white">
         <Link href="/">
           <div className="mr-6 flex flex-shrink-0 items-center text-white">
@@ -26,7 +26,7 @@ const Navbar = () => {
               <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
             </svg> */}
             <span className="text-xl font-semibold tracking-tight">
-              Prof Concursado
+              Prof. Concursado
             </span>
           </div>
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
               return (
                 <li
                   onClick={handleNav}
-                  className="p-4 text-4xl hover:text-gray-500 uppercase"
+                  className="p-4 text-4xl uppercase hover:text-gray-500"
                   key={item.label}
                 >
                   <Link href={item.href}>{item.label}</Link>
