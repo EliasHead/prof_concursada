@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="ease-in>navbar fixed left-0 top-0 z-10 w-full bg-zinc-600 duration-300">
+    <div className="ease-in>navbar fixed left-0 top-0 z-10 w-full bg-cyan-600 duration-300">
       <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white">
         <Link href="/">
           <div className="mr-6 flex flex-shrink-0 items-center text-white">
@@ -53,8 +53,8 @@ const Navbar = () => {
         <div
           className={
             isOpen
-              ? 'absolute bottom-0 left-0 right-0 top-0 flex h-screen w-full items-center justify-center bg-teal-500 text-center duration-300 ease-in sm:hidden'
-              : 'absolute bottom-0 left-[-100%] right-0 top-0 flex h-screen w-full items-center justify-center bg-teal-500 text-center duration-300 ease-in sm:hidden'
+              ? 'absolute bottom-0 left-0 right-0 top-0 flex h-screen w-full items-center justify-center bg-cyan-600 text-center duration-300 ease-in sm:hidden'
+              : 'absolute bottom-0 left-[-100%] right-0 top-0 flex h-screen w-full items-center justify-center bg-cyan-600 text-center duration-300 ease-in sm:hidden'
           }
         >
           <ul>
