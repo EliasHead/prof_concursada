@@ -62,7 +62,7 @@ const Navbar = () => {
               return (
                 <li
                   onClick={handleNav}
-                  className="p-4 text-4xl hover:text-gray-500"
+                  className="p-4 text-4xl hover:text-gray-500 uppercase"
                   key={item.label}
                 >
                   <Link href={item.href}>{item.label}</Link>

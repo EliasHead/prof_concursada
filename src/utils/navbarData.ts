@@ -5,15 +5,15 @@ export interface NavbarItemType {
 
 export const navbarData: Array<NavbarItemType> = [
   {
-    label: 'incio',
-    href: '#',
+    label: 'inicio',
+    href: '/',
   },
   {
     label: 'cursos',
-    href: '#',
+    href: '/cursos',
   },
   {
     label: 'livro digital',
-    href: '#',
+    href: '/livros',
   },
 ]
