@@ -12,10 +12,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className="ease-in>navbar fixed left-0 top-0 z-10 w-full bg-cyan-600 duration-300">
-      <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white">
+    <div className="ease-in>navbar fixed left-0 top-0 z-10 w-full border-b bg-white duration-300">
+      <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-black">
         <Link href="/">
-          <div className="mr-6 flex flex-shrink-0 items-center text-white">
+          <div className="mr-6 flex flex-shrink-0 items-center">
+            {/* <Image src={logo} alt="logo" height={32} width={32} /> */}
             {/* <svg
               className="mr-2 h-8 w-8 fill-current"
               width="54"
@@ -25,8 +26,8 @@ const Navbar = () => {
             >
               <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
             </svg> */}
-            <span className="text-xl font-semibold tracking-tight">
-              Prof. Concursado
+            <span className="text-xl tracking-tight">
+              Prof.<strong>Concursado</strong>
             </span>
           </div>
         </Link>
@@ -44,17 +45,17 @@ const Navbar = () => {
         {/* Mobile Button */}
         <div onClick={handleNav} className="z-10 block sm:hidden">
           {isOpen ? (
-            <X size={24} color="#fafafa" weight="bold" />
+            <X size={24} color="#000000" weight="bold" />
           ) : (
-            <List size={24} color="#ffffff" weight="bold" />
+            <List size={24} color="#000000" weight="bold" />
           )}
         </div>
         {/* Mobile Menu */}
         <div
           className={
             isOpen
-              ? 'absolute bottom-0 left-0 right-0 top-0 flex h-screen w-full items-center justify-center bg-cyan-600 text-center duration-300 ease-in sm:hidden'
-              : 'absolute bottom-0 left-[-100%] right-0 top-0 flex h-screen w-full items-center justify-center bg-cyan-600 text-center duration-300 ease-in sm:hidden'
+              ? 'absolute bottom-0 left-0 right-0 top-0 flex h-screen w-full items-center justify-center bg-gray-200 text-center duration-300 ease-in sm:hidden'
+              : 'absolute bottom-0 left-[-100%] right-0 top-0 flex h-screen w-full items-center justify-center bg-gray-200 text-center duration-300 ease-in sm:hidden'
           }
         >
           <ul>
